@@ -23,13 +23,24 @@
     "url": "https://github.com/mdev-qn95/blog_nodejs/issues"
   },
   "homepage": "https://github.com/mdev-qn95/blog_nodejs#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0"
   },
   "devDependencies": {
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
     "morgan": "^1.10.0",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
   }
 }
