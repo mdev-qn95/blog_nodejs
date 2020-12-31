@@ -1,0 +1,17 @@
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-3">
+           <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Bạn đã đăng ký khoá học này!</h5>
+                <button type="submit" class="bttn-pill bttn-sm bttn-primary bttn-no-outline">Học ngay</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <h2>{{ course.name }}</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ course.videoId }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{ course.description }}</p>
+        </div>
+    </div>
+</div>
