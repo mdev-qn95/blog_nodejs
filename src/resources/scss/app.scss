@@ -1,11 +1,15 @@
 @import 'variables';
 
-h1{
-    color: $blue-color;
+h1 {
+  color: $blue-color;
 }
-body{
-    font-family: 'Quicksand', sans-serif;
+body {
+  font-family: 'Quicksand', sans-serif;
 }
-.form-control{
-    border-radius: 20px;
+.form-control {
+  border-radius: 20px;
+}
+
+.card-course-item {
+  margin-top: 16px;
 }
